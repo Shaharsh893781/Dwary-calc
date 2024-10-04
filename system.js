@@ -1,4 +1,4 @@
-function Dahej() {
+  function Dahej() {
     let Damaadname = document.getElementById('name').value;
     let Damaadage = document.getElementById('age').value;
     let DamaadStatus = document.getElementById('job').value;
@@ -9,8 +9,8 @@ function Dahej() {
         return;
     }
 
-    if (!Damaadage) {
-        alert('Please enter the age of the groom.');
+    if (!Damaadage || isNaN(Damaadage) || Damaadage <= 0) {
+        alert('Please enter a valid age for the groom.');
         return;
     }
 
@@ -19,18 +19,16 @@ function Dahej() {
         return;
     }
 
-    if (!DamaadIncome) {
-        alert('Please enter the income of the groom.');
+    if (!DamaadIncome || isNaN(DamaadIncome) || DamaadIncome <= 0) {
+        alert('Please enter a valid income for the groom.');
         return;
     }
 
     Damaadage = Number(Damaadage);
     DamaadIncome = Number(DamaadIncome);
 
-    
     let dowary = DamaadIncome * 2 + 100000;
 
-   
     let ResultMessage;
     if (Damaadage < 18) {
         ResultMessage = "Pehle ande se to nikal ja bsdk!";
@@ -40,6 +38,6 @@ function Dahej() {
         ResultMessage = `Sab thik hai! Dowry should be ₹${dowary}.`;
     }
 
-   
     alert(ResultMessage);
 }
+
