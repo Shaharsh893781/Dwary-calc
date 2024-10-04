@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+
+    background-image: url(https://t3.ftcdn.net/jpg/05/07/66/60/240_F_507666056_PWpdxFDd6CmKgaKiBFxmlw7jdSnd7Y1M.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -50px;
+}
+
+.heading {
+    color: black;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px; 
+    margin-top: -30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 0; 
+    animation: fadeInSlideUp 1s forwards;
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    100% {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.calc{
+display: flex;
+justify-content: center;
+align-items: center; 
+border: 2px solid black;
+flex-direction: column;
+width: 50%;
+height: fit-content;
+box-sizing: border-box;
+padding: 20px; 
+background-color: rgba(255, 255, 255, 0.8); 
+border-radius: 10px; 
+}
+
+@media (max-width: 768px) {
+    .calc {
+        width: 90%;
+    }
+
+    .heading {
+        font-size: 24px; 
+    }
+
+    button {
+        width: 70%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .calc {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .heading {
+        font-size: 22px; 
+    }
+
+    input, select, button {
+        font-size: 14px; 
+    }
+
+    button {
+        padding: 8px;
+        width: 80%;
+    }
+}
+
+input::placeholder{
+    font-size: 16px;
+text-align: center
+
+}
+
+option{
+    text-align: center;
+}
+
+Select{
+font-size: 16px;
+}
+
+label{
+    font-size: 16px;
+}
+
+select {
+    font-size: 16px;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px; 
+}
+
+input {
+    margin-bottom: 15px; 
+    width: 100%;
+    padding: 10px; 
+    border-radius: 10px;
+}
+
+
+select {
+    border-radius: 10px;
+    margin-bottom: 15px; 
+    width: 100%; 
+    padding: 10px; }
+    
+
+
+button{
+    color: white;
+    background-color: darkblue;
+    font-size: 20px;
+    padding: 5px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    height: 80%;
+    width:50%;
+    animation: gradientAnimation 5s ease infinite;
+
+    
+
+}
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+button:hover{
+    color: darkblue;
+background-color:white
+
+
+
+}
+
+
