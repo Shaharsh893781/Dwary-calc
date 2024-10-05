@@ -1,4 +1,4 @@
-  function Dahej() {
+function Dahej() {
     let Damaadname = document.getElementById('name').value;
     let Damaadage = document.getElementById('age').value;
     let DamaadStatus = document.getElementById('job').value;
@@ -39,5 +39,9 @@
     }
 
     alert(ResultMessage);
+
+  
+    document.getElementById('dowryForm').reset();
 }
+
 
