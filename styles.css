@@ -6,6 +6,7 @@
 }
 
 body {
+    overflow: hidden;
     background-image: url(https://t3.ftcdn.net/jpg/05/07/66/60/240_F_507666056_PWpdxFDd6CmKgaKiBFxmlw7jdSnd7Y1M.jpg);
     display: flex;
     justify-content: center;
