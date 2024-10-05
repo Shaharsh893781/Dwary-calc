@@ -4,47 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+    <title>Dowary Calculator
+        <link rel="icon" href="file:///C:/Users/sumit/Downloads/240_F_507666056_PWpdxFDd6CmKgaKiBFxmlw7jdSnd7Y1M.io" type="image/x-icon">
+    </title>
+    
+
+    
+      
 </head>
 <link rel="stylesheet" href="styles.css">
 
 <body>
     <div class="container">
-
         <div class="heading">
             <h1>Dowry Calculator</h1> 
         </div>
-            
-    
-        <div class="calc">
-            <h2>Groom's Detail   </h2>
+        
+        <form id="dowryForm" class="calc"> 
+            <h2>Groom's Detail</h2>
             <label for="name">Groom's Name</label>
             <input type="text" id="name" placeholder="Enter your Name">
     
-            <label for="Name">  Groom's age</label>
-            <input type="number" id="age" placeholder="Enter your age ">
+            <label for="age">Groom's Age</label>
+            <input type="number" id="age" placeholder="Enter your age">
     
-            <label for="job">  Groom's  job Profile</label>
-           <select id="job">
-            <option value="" disabled selected>Select Job Profile</option>
+            <label for="job">Groom's Job Profile</label>
+            <select id="job">
+                <option value="" disabled selected>Select Job Profile</option>
+                <option value="Private">Private</option>
+                <option value="Government">Government</option>
+            </select>
     
-        <option value="Private">Private</option>
-        <option value="Government ">Government</option>
+            <label for="salary">Groom's Salary</label>
+            <input type="number" id="salary" placeholder="Enter your Salary">
     
-    
-    
-    
-           </select>
-    
-           <label for="Salary">  Groom's Salary</label>
-           <input type="number" id="salary" placeholder="Enter your Salary  ">
-    
-           <button onclick="Dahej()">Calculate Dowry</button>
-    
-    
-        
-        </div>
-    
+            <button type="button" onclick="Dahej()">Calculate Dowry</button>
+        </form>
     </div>
 
     <script src="system.js"></script>
